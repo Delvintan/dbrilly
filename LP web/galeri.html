@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri Foto – D’Brilly Coffee &amp; Tea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- pakai style.css yang sudah ada -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS tambahan khusus galeri -->
+    <style>
+        body {
+            background: #0b0b0b;
+            color: #f5f5f5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        .gallery-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gallery-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .gallery-header a {
+            color: #ffcc66;
+            text-decoration: none;
+            font-size: .9rem;
+        }
+
+        .gallery-header a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery-title {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .gallery-title strong {
+            font-size: 1.1rem;
+        }
+
+        .gallery-main {
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .gallery-heading {
+            margin-bottom: 1.25rem;
+        }
+
+        .gallery-heading h1 {
+            font-size: 1.5rem;
+            margin: 0 0 .25rem;
+        }
+
+        .gallery-heading p {
+            margin: 0;
+            font-size: .9rem;
+            color: #bbbbbb;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            background: #181818;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.04);
+            box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            max-height: 260px;
+        }
+
+        .gallery-caption {
+            padding: .75rem .9rem 0.9rem;
+            font-size: .85rem;
+            color: #dddddd;
+            display: flex;
+            flex-direction: column;
+            gap: .15rem;
+        }
+
+        .tag-row {
+            font-size: .75rem;
+            color: #999999;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+            padding: .15rem .5rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.16);
+        }
+
+        .tag-dot {
+            width: .35rem;
+            height: .35rem;
+            border-radius: 999px;
+            background: #ffcc66;
+        }
+
+        .gallery-footer {
+            padding: 1rem 1.5rem 1.5rem;
+            font-size: .8rem;
+            color: #888888;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        @media (max-width: 640px) {
+            .gallery-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="gallery-page">
+
+    <!-- header mini -->
+    <header class="gallery-header">
+        <div class="gallery-title">
+            <strong>D’Brilly Coffee &amp; Tea</strong><br>
+            <span>Galeri Foto untuk laporan UAS</span>
+        </div>
+        <a href="index.html">&larr; Kembali ke Landing Page</a>
+    </header>
+
+    <!-- konten utama -->
+    <main class="gallery-main">
+        <div class="gallery-heading">
+            <h1>Galeri Produk &amp; Aktivitas</h1>
+            <p>Semua foto asli UMKM yang dipakai untuk konten landing page, Instagram, dan analisis media sosial.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- kamu bebas ganti caption di bawah ini -->
+
+            <figure class="gallery-item">
+                <img src="Image (23).jpg" alt="Kopi Sultan dengan karamel di gelas">
+                <figcaption class="gallery-caption">
+                    <div>Kopi Sultan dengan saus karamel di dinding gelas.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Menu utama</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (24).jpg" alt="Close up Kopi Sultan">
+                <figcaption class="gallery-caption">
+                    <div>Close up tekstur kopi susu dan karamel.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Visual hero</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (21).jpg" alt="Teh dengan cream di atas">
+                <figcaption class="gallery-caption">
+                    <div>Creamy tea float – teh dengan foam creamy.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Menu teh</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (22).jpg" alt="Dua gelas minuman teh">
+                <figcaption class="gallery-caption">
+                    <div>Dua varian teh dingin: sweet tea &amp; cream tea.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Menu best seller</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (27).jpg" alt="Minuman lemon segar">
+                <figcaption class="gallery-caption">
+                    <div>Lemon sparkling dengan irisan lemon segar.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Lemon series</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (26).jpg" alt="Tiga minuman berbeda">
+                <figcaption class="gallery-caption">
+                    <div>Paket 3 gelas: kopi, teh, dan lemon – konten untuk paket nongkrong.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Paket promo</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (25).jpg" alt="Minuman lemon close up">
+                <figcaption class="gallery-caption">
+                    <div>Close up lemon drink dengan logo D’Brilly.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Detail produk</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (20).png" alt="Logo D’Brilly Coffee &amp; Tea versi digital">
+                <figcaption class="gallery-caption">
+                    <div>Logo resmi D’Brilly Coffee &amp; Tea (versi digital).</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Asset brand</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (20).jpg" alt="Cup kopi dengan logo D’Brilly">
+                <figcaption class="gallery-caption">
+                    <div>Foto cup kopi dengan logo tercetak di cup.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Dokumentasi lapangan</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (14).jpg" alt="Proses pembuatan kopi">
+                <figcaption class="gallery-caption">
+                    <div>Proses pembuatan kopi di mesin espresso.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Behind the scene</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (15).jpg" alt="Cup kopi dipegang tangan">
+                <figcaption class="gallery-caption">
+                    <div>Dokumentasi produk dipegang customer.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Konten lifestyle</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (16).jpg" alt="Foto kopi dengan latar kios">
+                <figcaption class="gallery-caption">
+                    <div>Kopi dengan background kios – menunjukkan lokasi usaha.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Konteks lokasi</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (17).jpg" alt="Foto kopi dengan tulisan di cup">
+                <figcaption class="gallery-caption">
+                    <div>Cup dengan tagline “Kopi Sultan Harga Merakyat”.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Tagline brand</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (18).jpg" alt="Barista memegang dua gelas minuman">
+                <figcaption class="gallery-caption">
+                    <div>Barista D’Brilly bersama dua gelas minuman – konten human/owner.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Human touch</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="Image (19).jpg" alt="Tiga cup minuman di meja">
+                <figcaption class="gallery-caption">
+                    <div>Tiga varian minuman ditata untuk konten feed.</div>
+                    <div class="tag-row">
+                        <span class="tag"><span class="tag-dot"></span> Feed Instagram</span>
+                    </div>
+                </figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer class="gallery-footer">
+        <p>Halaman galeri ini dibuat sebagai dokumentasi aset konten untuk proyek UAS Web Analitika &amp; Media Sosial.</p>
+    </footer>
+</div>
+</body>
+</html>
